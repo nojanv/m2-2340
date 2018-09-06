@@ -21,7 +21,7 @@ public class Person4 {
   }
     /**
      * This method should return a string
-     * where each character is 1 greater 
+     * where each character is 1 greater
      * than its previous value.  So
      * given "abc123" it should return
      * "bcd234".
