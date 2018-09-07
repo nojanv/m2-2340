@@ -32,20 +32,14 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-        String finalString = "";
-        String[] tempList = new String[input.length()];
-        for (int i = 0; i < input.length(); i++) {
-            tempList[i] = input[i];
 
-        }
-        Collections.shuffle(tempList);
-        for(int i = 0; i < tempList.length(); i++) {
-            finalString += tempList[i];
-        }
-
-
-	  return finalString;
-	}
+		List<String> letters = Arrays.asList(input.split(""));
+		Collections.shuffle(letters);
+		String ret = "";
+		for (String letter : letters) {
+			ret += letter;
+		}
+		return ret;	}
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
